@@ -12,7 +12,7 @@ public class Employee {
 	@GeneratedValue
 	private Long id;
 	private String firstName;
-	private String lastname;
+	private String lastName;
 	private BigDecimal identCode;
 	private String login;
 
@@ -33,11 +33,11 @@ public class Employee {
 	}
 
 	public String getLastname() {
-		return lastname;
+		return lastName;
 	}
 
 	public void setLastname(String lastname) {
-		this.lastname = lastname;
+		this.lastName = lastname;
 	}
 
 	public BigDecimal getIdentCode() {
@@ -58,7 +58,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", firstName=" + firstName + ", lastname=" + lastname + ", identCode=" + identCode
+		return "Employee [id=" + id + ", firstName=" + firstName + ", lastname=" + lastName + ", identCode=" + identCode
 				+ ", login=" + login + "]";
 	}
 

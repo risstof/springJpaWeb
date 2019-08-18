@@ -1,8 +1,13 @@
 package springJpaWeb;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.data.repository.CrudRepository;
 
-public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+public interface EmployeeRepository extends CrudRepository<Employee, Long> {
+	
+	Optional<Employee> findByFirstName(String firstName); // how is it possible?
+	Optional<Employee> findByLastName(String lastName);
 
 }

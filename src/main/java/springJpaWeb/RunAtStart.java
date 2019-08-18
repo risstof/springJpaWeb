@@ -1,5 +1,6 @@
 package springJpaWeb;
 
+import java.util.List;
 import java.util.Optional;
 
 import javax.annotation.PostConstruct;
@@ -28,12 +29,18 @@ public class RunAtStart {
 		employee.setLastname("Kowalski");
 		employee1.setFirstName("Arleta");
 		employee1.setLastname("Kowal");
-		
+
 		employeeRepository.save(employee);
 		employeeRepository.save(employee1);
-		
+
 		Optional<Employee> alexK = employeeRepository.findById(1L);
 		System.out.println(alexK);
+
+		Optional<Employee> arletaK = employeeRepository.findByFirstName("Arleta");
+		System.out.println(arletaK);
+
+		Optional<Employee> nothing = employeeRepository.findByLastName("Kowal");
+		System.out.println(nothing);
 	}
 
 }
