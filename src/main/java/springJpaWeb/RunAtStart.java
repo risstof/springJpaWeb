@@ -20,7 +20,6 @@ public class RunAtStart {
 	}
 
 	@PostConstruct
-
 	private void runAtStart() {
 
 		Employee employee = new Employee();
