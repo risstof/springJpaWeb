@@ -10,17 +10,17 @@ import javax.persistence.Id;
 public class Employee {
 	@Id
 	@GeneratedValue
-	private String id;
+	private Long id;
 	private String firstName;
 	private String lastname;
 	private BigDecimal identCode;
 	private String login;
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
