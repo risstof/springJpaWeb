@@ -5,6 +5,9 @@
 	<groupId>net.example</groupId>
 	<artifactId>springJpaWeb</artifactId>
 	<version>0.0.1</version>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
 		<dependency>
@@ -42,6 +45,12 @@
 			<groupId>javax.annotation</groupId>
 			<artifactId>javax.annotation-api</artifactId>
 			<version>1.3.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-jersey -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jersey</artifactId>
+			<version>2.1.7.RELEASE</version>
 		</dependency>
 		<!-- mvn install:install-file -Dfile=D:\Download\ojdbc6.jar -DgroupId=com.oracle 
 			-DartifactId=ojdbc6 -Dversion=11.2.0.4 -Dpackaging=jar -->
